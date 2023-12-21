@@ -9,7 +9,7 @@ function mailer($message,$emails,$subject){
 
 			$developmentMode = false;
 			
-			$mail = new PHPMailer(true);
+			$mail = new PHPMailer($developmentMode);
 			try {
 			 
 			$mail->isSMTP();                            // Set mailer to use SMTP
